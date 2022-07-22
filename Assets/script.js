@@ -247,7 +247,7 @@ $(document).ready(function () {
                         minTemp: Math.round(cur.temp.min),
                         maxTemp: Math.round(cur.temp.max),
                         humidity: cur.humidity,
-                        uvi: cur.uvi,
+                        wind: cur.wind_speed,
                         date: (convertDate(cur.dt))
                     }
                     // push day to weatherArr
@@ -271,6 +271,7 @@ $(document).ready(function () {
                     let $tempMaxLi = $('<li>');
                     let $tempMinLi = $('<li>');
                     let $humLi = $('<li>');
+                    let $windS = $('<li>');
 
                     // format html values
                     $iconI.attr('src', weatherArr[i].icon);
@@ -278,6 +279,7 @@ $(document).ready(function () {
                     $tempMaxLi.text('High: ' + weatherArr[i].maxTemp + " °F");
                     $tempMinLi.text('Low: ' + weatherArr[i].minTemp + " °F");
                     $humLi.text('Humidity: ' + weatherArr[i].humidity + "%");
+                    $windS.text('Wind Speed: ' + weatherArr[i].wind + " MPH");
 
                     // append HTML
                     $iconLi.append($iconI);
@@ -286,6 +288,7 @@ $(document).ready(function () {
                     $ul.append($tempMaxLi);
                     $ul.append($tempMinLi);
                     $ul.append($humLi);
+                    $ul.append($windS);
                     $cardTitles.append($ul);
                     $cardBody.append($cardTitles);
                     $colmx1.append($cardBody);
