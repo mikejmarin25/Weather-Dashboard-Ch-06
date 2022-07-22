@@ -112,7 +112,7 @@ $(document).ready(function () {
         var cityName = city;
         var unitsURL = "&units=imperial";
         var apiIdURL = "&appid="
-        var apiKey = "0705643b94243fe1abda1ba9766f538a";
+        var apiKey = "2d2196b8becd3d011356cdace9e71ab7";
         var openCurrWeatherAPI = currentURL + cityName + unitsURL + apiIdURL + apiKey;
 
         // Open weather API query - weather request
@@ -161,7 +161,7 @@ $(document).ready(function () {
             // Initiate API Call to get current weather
             var uviURL = "https://api.openweathermap.org/data/2.5/uvi";
             var apiIdURL = "?appid="
-            var apiKey = "f2da475e3f33a76106dd40ea31ab6cfa";
+            var apiKey = "2d2196b8becd3d011356cdace9e71ab7";
             var cityName = city;
             var openUviWeatherAPI = uviURL + apiIdURL + apiKey + cityName;
 
@@ -205,7 +205,7 @@ $(document).ready(function () {
         var cityName = city;
         var unitsURL = "&units=imperial";
         var apiIdURL = "&appid="
-        var apiKey = "0705643b94243fe1abda1ba9766f538a";
+        var apiKey = "2d2196b8becd3d011356cdace9e71ab7";
         var openCurrWeatherAPI2 = currentURL + cityName + unitsURL + apiIdURL + apiKey;
 
         // Open weather API query - weather request
@@ -231,7 +231,7 @@ $(document).ready(function () {
             var exclHrlURL = "&exclude=hourly";
             var unitsURL = "&units=imperial";
             var apiIdURL = "&appid=";
-            var apiKey = "0705643b94243fe1abda1ba9766f538a";
+            var apiKey = "2d2196b8becd3d011356cdace9e71ab7";
             var openFcstWeatherAPI = currentURL + cityName + exclHrlURL + unitsURL + apiIdURL + apiKey;
 
             // Open weather api
@@ -271,7 +271,6 @@ $(document).ready(function () {
                     let $tempMaxLi = $('<li>');
                     let $tempMinLi = $('<li>');
                     let $humLi = $('<li>');
-                    let $windS = $('<li>');
 
                     // format html values
                     $iconI.attr('src', weatherArr[i].icon);
