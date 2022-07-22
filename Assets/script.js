@@ -271,6 +271,7 @@ $(document).ready(function () {
                     let $tempMaxLi = $('<li>');
                     let $tempMinLi = $('<li>');
                     let $humLi = $('<li>');
+                    let $windS = $('<li>');
 
                     // format html values
                     $iconI.attr('src', weatherArr[i].icon);
